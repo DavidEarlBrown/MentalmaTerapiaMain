@@ -13,6 +13,7 @@ import { ProfessionalResumeModal } from './ProfessionalResumeModal';
 import { ExpandableProfessionalPhoto } from './ProfessionalPhotoLightbox';
 import { LanguageFlag, LanguageFlagGroup } from './CountryFlag';
 import { getCountryCodeForLanguage } from '../lib/languageCountryCodes';
+import { CompanyAiIcon } from './CompanyAiIcon';
 import { GeminiAiIcon } from './GeminiAiIcon';
 
 const PROFESSIONAL_MEDIA_BUCKET = 'psychologist-resumes';
@@ -612,7 +613,7 @@ export function ProfessionalList({
           disabled={isFindingProfessional || !problemText.trim()}
           aria-label={t('findProfessionalAI')}
         >
-          <GeminiAiIcon className="ai-icon" />
+          <CompanyAiIcon size={20} />
           <span>{isFindingProfessional ? t('processing') || '…' : t('aiHelp')}</span>
         </button>
       </div>

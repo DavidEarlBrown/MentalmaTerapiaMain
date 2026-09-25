@@ -2222,6 +2222,10 @@ body:has(.client-info-page),
   flex-shrink: 0;
 }
 
+.ai-assist-button .company-ai-icon {
+  font-size: 22px;
+}
+
 .specialty-filter-section {
   background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
   border-radius: 12px;
