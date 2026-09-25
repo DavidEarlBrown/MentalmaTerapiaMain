@@ -1,0 +1,14 @@
+[build]
+  command = "npx vite build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  CI = "true"
+  NPM_CONFIG_AUDIT = "false"
+  NPM_CONFIG_FUND = "false"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
